@@ -1,0 +1,89 @@
+/* Configuración de Fondo */
+body {
+    background: url('../img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Efecto Glassmorphism para la tarjeta */
+.form-card {
+    background: rgba(255, 255, 255, 0.7); /* Opacidad suave [cite: 400] */
+    backdrop-filter: blur(15px); /* Desenfoque de fondo [cite: 401] */
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Borde tipo vidrio [cite: 403] */
+    border-radius: 24px; /* Bordes redondeados profesionales [cite: 404] */
+    max-width: 800px;
+    width: 90%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los Inputs */
+.form-control, .form-select, .input-group-text {
+    border-radius: 12px; /* Redondeado según diseño [cite: 417] */
+    border-color: #e0e0e0;
+}
+
+.input-group-text {
+    color: #00d2ff; /* Color de los iconos [cite: 502] */
+}
+
+/* Botón con Degradado */
+.submit-button {
+    background: linear-gradient(135deg, #00d2ff 0%, #007bff 100%); /* Degradado azul-cian [cite: 432] */
+    color: white;
+    border: none;
+    border-radius: 50px; /* Estilo píldora [cite: 438] */
+    font-weight: 600;
+    transition: transform 0.2s ease;
+}
+
+.submit-button:hover {
+    transform: translateY(-2px); /* Efecto al pasar el mouse [cite: 445] */
+    color: white;
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+}
+/* Estilo para el Navbar transparente [cite: 321, 322] */
+.bg-dark-transparent {
+    background: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Estilo para el Footer con efecto vidrio [cite: 332, 333, 347] */
+.footer-glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Colores auxiliares */
+.text-light-50 {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.x-small {
+    font-size: 0.75rem;
+}
+
+/* Asegurar que la imagen de fondo cubra todo [cite: 147, 452] */
+body {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+/* Estilo específico para el enlace de GitHub */
+.github-link {
+    color: white;
+    font-size: 3rem; /* Tamaño grande para que destaque como logo único */
+    transition: all 0.3s ease;
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
+    text-decoration: none;
+}
+
+.github-link:hover {
+    color: #00d2ff; /* Cambia al color cian del diseño al pasar el mouse */
+    transform: scale(1.1); /* Efecto de aumento sutil */
+    text-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
+}
